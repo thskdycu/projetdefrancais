@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plan d'Autonomie du Sahara marocaine - 2007</title>
+    <link rel="stylesheet" href="francais.css">
+    <script defer src="francais.js"></script>
+</head>
+<body>
+
+<header>
+    <h1>Plan d'Autonomie du Sahara Occidental - 2007</h1>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#" onclick="showTab(event,'security')">Vérification sécurité</a></li>
+        <li><a href="#" onclick="showTab(event,'intro')">Introduction</a></li>
+        <li><a href="#" onclick="showTab(event,'background')">Contexte</a></li>
+        <li><a href="#" onclick="showTab(event,'plan')">Le Plan</a></li>
+        <li><a href="#" onclick="showTab(event,'reaction')">Réactions</a></li>
+        <li><a href="#" onclick="showTab(event,'conclusion')">Conclusion</a></li>
+        <li><a href="#" onclick="showTab(event,'ending')">Fin du projet</a></li>
+    </ul>
+</nav>
+
+<!-- Security Check Tab -->
+<section id="security" class="tab active">
+    <div class="card-like">
+        <h2>Vérification de sécurité</h2>
+        <p>Entrez le mot de passe pour continuer :</p>
+        <input type="password" id="password">
+        <button onclick="checkPassword()">Vérifier</button>
+        <p id="message"></p>
+    </div>
+</section>
+
+<section id="intro" class="tab">
+    <div class="card-like">
+        <h2>Introduction</h2>
+        <p>Le Sahara Occidental est un territoire contesté depuis plusieurs décennies entre le Maroc et le Front Polisario. Le plan d'autonomie de 2007 proposé par l'ONU vise une solution pacifique.</p>
+    </div>
+</section>
+
+<section id="background" class="tab">
+    <div class="card-like">
+        <h2>Contexte</h2>
+        <p>Le conflit oppose le Maroc et le Front Polisario, soutenu par l'Algérie. L'ONU cherche depuis longtemps un règlement pacifique et durable.</p>
+    </div>
+</section>
+
+<section id="plan" class="tab">
+    <h2 style="color: rgb(255, 224, 167)">Le Plan d'Autonomie (2007)</h2>
+    <div class="container">
+        <div class="card" onclick="flipCard(this)">
+            <div class="card-inner">
+                <div class="card-front">
+                    <h4>Autonomie locale</h4>
+                    <img src="images/windturbine.jpg" alt="">
+                </div>
+                <div class="card-back">
+                    <p>Le Sahara gère ses affaires locales sous souveraineté marocaine.</p>
+                </div>
+            </div>
+        </div>
+        <div class="card" onclick="flipCard(this)">
+            <div class="card-inner">
+                <div class="card-front">
+                    <h4>Compétences conservées par le Maroc</h4>
+                    <img src="images/technology-image.jpg" alt="">
+                </div>
+                <div class="card-back">
+                    <p>Le Maroc garde la défense, la monnaie et les relations étrangères.</p>
+                </div>
+            </div>
+        </div>
+        <div class="card" onclick="flipCard(this)">
+            <div class="card-inner">
+                <div class="card-front">
+                    <h4>Objectif</h4>
+                    <img src="images/shit.png" alt="">
+                </div>
+                <div class="card-back">
+                    <p>Cadre légal stable et solution pacifique pour le conflit du Sahara Occidental.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="reaction" class="tab">
+    <h2 style="color: rgb(255, 224, 167)">Réactions internationales</h2>
+    <div class="container">
+        <div class="card" onclick="flipCard(this)">
+            <div class="card-inner">
+                <div class="card-front">
+                    <h3>Pays soutenant</h3>
+                </div>
+                <div class="card-back">
+                    <p>l'Amerique, France, Espagne, Royaume-Uni, Allemagne, certains pays arabes.</p>
+                </div>
+            </div>
+        </div>
+        <div class="card" onclick="flipCard(this)">
+            <div class="card-inner">
+                <div class="card-front">
+                    <h3>Pays opposants</h3>
+                </div>
+                <div class="card-back">
+                    <p>Algérie, Front Polisario.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="conclusion" class="tab">
+    <div class="card-like">
+        <h2>Conclusion</h2>
+        <p>Le plan de 2007 reste une base possible pour la paix, mais il reste controversé. Il illustre la volonté de trouver une solution pacifique au conflit du Sahara Occidental.</p>
+    </div>
+</section>
+
+<section id="ending" class="tab">
+    <div class="card-like">
+        <h2>Fin du projet</h2>
+        <p>Merci pour votre attention</p>
+        <img src="images/masterpiece.gif" alt="could not find image">
+    </div>
+</section>
+
+<footer>
+    <p>Réalisé par [Ilyas Lazir]</p>
+</footer>
+
+</body>
+</html>
